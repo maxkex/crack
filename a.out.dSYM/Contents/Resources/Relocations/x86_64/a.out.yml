@@ -1,0 +1,12 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     a.out
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _tryWord, symObjAddr: 0x0, symBinAddr: 0x1000039F0, symSize: 0x170 }
+  - { offsetInCU: 0x3F, offset: 0x3F, size: 0x8, addend: 0x0, symName: _PASS_LEN, symObjAddr: 0x300, symBinAddr: 0x100003F1C, symSize: 0x0 }
+  - { offsetInCU: 0x60, offset: 0x60, size: 0x8, addend: 0x0, symName: _HASH_LEN, symObjAddr: 0x304, symBinAddr: 0x100003F20, symSize: 0x0 }
+  - { offsetInCU: 0x83, offset: 0x83, size: 0x8, addend: 0x0, symName: _tryWord, symObjAddr: 0x0, symBinAddr: 0x1000039F0, symSize: 0x170 }
+  - { offsetInCU: 0x103, offset: 0x103, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x170, symBinAddr: 0x100003B60, symSize: 0x18E }
+  - { offsetInCU: 0x26, offset: 0x3BB, size: 0x8, addend: 0x0, symName: _md5, symObjAddr: 0x0, symBinAddr: 0x100003CF0, symSize: 0x1AD }
+  - { offsetInCU: 0x46, offset: 0x3DB, size: 0x8, addend: 0x0, symName: _md5, symObjAddr: 0x0, symBinAddr: 0x100003CF0, symSize: 0x1AD }
+...
