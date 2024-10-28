@@ -42,8 +42,9 @@ char * tryWord(char * plaintext, char * hashFilename)
         // Compare the hash with the current line in the file
         if (strcmp(hash, line) == 0) {
             fclose(hashFile);
+            return hash;  // Return the matching hash
             free(hash);  // Free the allocated memory for hash
-            return plaintext;  // Return the matching plaintext
+        
         }
     }
 
@@ -87,9 +88,8 @@ int main(int argc, char *argv[])
 
         char *found = tryWord(line, argv[1]);
         if (found) {
-            // Compute the hash again to print it
-            char *hash = md5(line, strlen(line));
-            printf("%s %s\n", hash, found);
+        
+            printf("%s %s\n", found, line);
             
             cracked++;
         }
